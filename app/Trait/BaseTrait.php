@@ -18,7 +18,11 @@ trait BaseTrait
     {
         $allTasks = (new BaseRepo())->all(new Task());
         $completedTasks = $this->getTasksByStatusId(COMPLETED_TASK)->toArray();
-        return ((count($completedTasks)/count($allTasks)) * 100);
+        if($allTasks > 0 )
+        {
+            return ((count($completedTasks)/count($allTasks)) * 100);
+        }
+        return 0;
     }
     public function taskEfficiencyByUser($userId)
     {
@@ -34,9 +38,5 @@ trait BaseTrait
     {
         return Task::where('status_id',$taskStatus)->get();
     }
-    // public function getTasksByUser($taskStatus): Collection
-    // {
-    //     return Task::where('assigned_user_id',$taskStatus)->get();
-    // }
 
 }

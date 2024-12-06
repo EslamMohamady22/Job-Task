@@ -65,3 +65,27 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 # Job-Task
+
+# run project
+
+   # run 
+    composer install
+    copy .env.example
+    php artisan key:generate
+    change Db_connection to be "mysql"
+    php artisan migrate
+    php artisan db:seed
+    npm install
+    nbm run dev
+    php artisan serve
+    register to create new user (User Role)
+
+    # this for mail notifications
+    MAIL_MAILER=smtp
+    MAIL_HOST=smtp.gmail.com
+    MAIL_PORT=587
+    MAIL_USERNAME=eslammohamady2212@gmail.com
+    MAIL_PASSWORD=icyomvijmkyuiqqw
+    MAIL_ENCRYPTION=tls
+    MAIL_FROM_ADDRESS=eslammohamady2212@gmail.com
+    MAIL_FROM_NAME="${APP_NAME}"
