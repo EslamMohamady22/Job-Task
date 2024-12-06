@@ -84,8 +84,8 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
     MAIL_MAILER=smtp
     MAIL_HOST=smtp.gmail.com
     MAIL_PORT=587
-    MAIL_USERNAME=eslammohamady2212@gmail.com
-    MAIL_PASSWORD=icyomvijmkyuiqqw
+    MAIL_USERNAME=your email
+    MAIL_PASSWORD=your password
     MAIL_ENCRYPTION=tls
-    MAIL_FROM_ADDRESS=eslammohamady2212@gmail.com
+    MAIL_FROM_ADDRESS=your email
     MAIL_FROM_NAME="${APP_NAME}"
